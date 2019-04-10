@@ -6,6 +6,7 @@
     <modules>
         <module>java-base</module>
         <module>spring</module>
+        <module>distributed</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

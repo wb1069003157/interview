@@ -29,3 +29,12 @@ private 和 static 方法无法重写.private 方法只属于对象自身,无法
 基本类型 -> 对象:
 对象 -> 基本类型:xxxValue()
 
+## JDK 和 JRE有什么区别
+JDK:Java Development Kit,java开发包,其包括JRE和一些Java工具,如javac,javap等  
+
+JRE:Java Runtime environment,Java运行时环境,其包括JVM和Java运行过程中所需要的一些核心类库.如lang,util等常用的...
+
+## == 和equals的区别是什么
+对于基本类型来说,== 是用来比较两者的字面值是否相同的,基本类型没有equals方法  
+
+对于对象来说,== 是用来比较
