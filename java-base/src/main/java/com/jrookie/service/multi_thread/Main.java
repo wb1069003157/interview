@@ -2,6 +2,7 @@ package com.jrookie.service.multi_thread;
 
 import com.jrookie.Application;
 import org.springframework.boot.SpringApplication;
+import org.springframework.scheduling.annotation.Async;
 
 import java.util.concurrent.*;
 
@@ -70,6 +71,15 @@ public class Main {
         }
 
 
+        // 6. Spring 对多线程的支持
+        // 6.1  定义线程池的配置类
+        // 6.2 在要用多线程来执行的方法上加上 @Async
 
+
+    }
+
+    @Async
+    public void testAsync(){
+        System.out.println("该方法是用多线程来执行的!!!");
     }
 }
