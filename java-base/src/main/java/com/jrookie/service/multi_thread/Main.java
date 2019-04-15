@@ -65,6 +65,7 @@ public class Main {
                 new ThreadPoolExecutor(10,10,1,TimeUnit.DAYS,blockingQueue);
 
         while (true){
+
             threadPoolExecutor.execute(()-> System.out.println("用线程池方式来创建线程"));
             // 执行有返回值的多线程任务
 //            threadPoolExecutor.submit()
