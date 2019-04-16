@@ -17,7 +17,7 @@ import java.util.concurrent.Executor;
  */
 @Configuration
 @EnableAsync
-public class ThreadConfig2 implements AsyncConfigurer{
+public class ThreadConfig2 implements AsyncConfigurer {
 
     @Override
     public Executor getAsyncExecutor() {

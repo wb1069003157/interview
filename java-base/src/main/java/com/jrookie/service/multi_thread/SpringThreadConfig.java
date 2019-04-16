@@ -19,7 +19,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class SpringThreadConfig {
 
     @Bean
-    public Executor getExecutor(){
+    public Executor getExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(5);
         executor.setMaxPoolSize(10);

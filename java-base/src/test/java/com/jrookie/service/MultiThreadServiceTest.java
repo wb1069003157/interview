@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 public class MultiThreadServiceTest {
 
     @Test
-    public void test(){
+    public void test() {
 
         Thread thread = new Thread();
         thread.setDaemon(true);

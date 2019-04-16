@@ -25,27 +25,27 @@ import static org.junit.Assert.*;
 public class DemoServiceTest {
 
     @Test
-    public void testEquals(){
+    public void testEquals() {
         int a = 0;
-        int b= 1;
+        int b = 1;
 
-        log.info("a == b :{}",a == b);
-
-    }
-
-    @Test
-    public void testMath(){
-        log.info("-1.8:,{}",Math.round(-1.8));
-        log.info("-1.5:,{}",Math.round(-1.5));
-        log.info("-1.2:,{}",Math.round(-1.2));
-        log.info("1.2:,{}",Math.round(1.2));
-        log.info("1.5:,{}",Math.round(1.5));
-        log.info("1.8:,{}",Math.round(1.8));
+        log.info("a == b :{}", a == b);
 
     }
 
     @Test
-    public void testString(){
+    public void testMath() {
+        log.info("-1.8:,{}", Math.round(-1.8));
+        log.info("-1.5:,{}", Math.round(-1.5));
+        log.info("-1.2:,{}", Math.round(-1.2));
+        log.info("1.2:,{}", Math.round(1.2));
+        log.info("1.5:,{}", Math.round(1.5));
+        log.info("1.8:,{}", Math.round(1.8));
+
+    }
+
+    @Test
+    public void testString() {
         String flag = new String();
         StringBuffer stringBuffer = new StringBuffer();
         StringBuilder stringBuilder = new StringBuilder();
@@ -55,25 +55,25 @@ public class DemoServiceTest {
     }
 
     @Test
-    public void testAbstrace(){
+    public void testAbstrace() {
 
     }
 
     @Test
-    public void testFiles(){
+    public void testFiles() {
 
     }
 
 
     @Test
-    public void testCollection(){
-        Collection collection ;
+    public void testCollection() {
+        Collection collection;
 
         HashMap hashMap;
         Hashtable hashtable;
         TreeMap treeMap;
 
-        int[] arrays = {1,2,3};
+        int[] arrays = {1, 2, 3};
         // array  -->  list
         List<int[]> ints = Arrays.asList(arrays);
 
@@ -85,7 +85,7 @@ public class DemoServiceTest {
 
         Iterator iterator = ints.iterator();
         ints.listIterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Object next = iterator.next();
             iterator.remove();
         }

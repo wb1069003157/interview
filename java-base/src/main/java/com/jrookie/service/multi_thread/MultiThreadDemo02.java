@@ -5,7 +5,7 @@ package com.jrookie.service.multi_thread;
  * @Description:
  * @Date: Create in 下午4:51 19-4-10
  */
-public class MultiThreadDemo02 implements Runnable{
+public class MultiThreadDemo02 implements Runnable {
 
     @Override
     public void run() {

@@ -7,11 +7,11 @@ import javax.naming.Name;
  * @Description:
  * @Date: Create in 下午3:14 19-4-15
  */
-public class User implements UserImpl{
+public class User implements UserImpl {
     private String name;
 
     @Override
-    public void printName(String name){
-        System.out.println("name:"+name);
+    public void printName(String name) {
+        System.out.println("name:" + name);
     }
 }

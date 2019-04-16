@@ -15,11 +15,11 @@ import java.lang.reflect.Method;
 public class CglibProxy implements MethodInterceptor {
     private Object target;
 
-    public CglibProxy(Object target){
+    public CglibProxy(Object target) {
         this.target = target;
     }
 
-    public Object getProxyInstance(){
+    public Object getProxyInstance() {
         // 主要的增强类
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(target.getClass());

@@ -10,7 +10,7 @@ public class Demo {
     private String flag;
 
 
-    public void test(){
+    public void test() {
 
     }
 }

@@ -14,7 +14,6 @@ import java.util.concurrent.*;
 public class Main {
 
 
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // 1. 用 extends Thread 实现
         Thread multiThreadDemo01 = new MultiThreadDemo01();
@@ -60,13 +59,13 @@ public class Main {
          * threadFactory  ThreadFactory  线程创建工厂
          * handler  RejectedExecutionHandler  拒绝策略
          */
-        BlockingQueue blockingQueue=new ArrayBlockingQueue<>(10);
+        BlockingQueue blockingQueue = new ArrayBlockingQueue<>(10);
         ThreadPoolExecutor threadPoolExecutor =
-                new ThreadPoolExecutor(10,10,1,TimeUnit.DAYS,blockingQueue);
+                new ThreadPoolExecutor(10, 10, 1, TimeUnit.DAYS, blockingQueue);
 
-        while (true){
+        while (true) {
 
-            threadPoolExecutor.execute(()-> System.out.println("用线程池方式来创建线程"));
+            threadPoolExecutor.execute(() -> System.out.println("用线程池方式来创建线程"));
             // 执行有返回值的多线程任务
 //            threadPoolExecutor.submit()
         }
@@ -80,7 +79,7 @@ public class Main {
     }
 
     @Async
-    public void testAsync(){
+    public void testAsync() {
         System.out.println("该方法是用多线程来执行的!!!");
     }
 }
